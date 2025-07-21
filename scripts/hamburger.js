@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelectorAll(".hamburger-zone");for(const t of document.querySelectorAll(".hamburger-btn"))t.addEventListener("click",t=>{t.preventDefault();for(const t of e)t.classList.toggle("active")})});

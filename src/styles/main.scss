@@ -1,5 +1,16 @@
+:root {
+    --primary-color: #303030;
+    --secondary-color: #C92F4D;
+    --white: #ffffff;
+}
 
-body{
-padding: 0;
-margin: 0;
+
+@import url(./hamburger.css);
+@import url(./style.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    height: 100vh;
 }

@@ -1,1 +1,1 @@
-body{margin:0;padding:0}
+@import url(./hamburger.css);@import url(./style.css);:root{--primary-color:#303030;--secondary-color:#c92f4d;--white:#fff}body{background-color:var(--primary-color);height:100vh;margin:0;padding:0}
