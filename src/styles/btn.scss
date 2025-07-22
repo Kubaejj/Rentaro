@@ -1,0 +1,51 @@
+/* From Uiverse.io by Ali-Tahmazi99 */
+/* From uiverse.io by @Ali-Tahmazi99 */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    background: black;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.btn::before {
+    left: -10px;
+    background: var(--primary-color);
+}
+
+.btn::after {
+    right: -10px;
+    background: var(--secondary-color);
+}
+
+.btn:hover::before,
+.btn:hover::after {
+    width: 58%;
+}
+
+.btn:hover {
+    transition: 0.3s;
+}
+
+.btn {
+    transition: all 0.3s ease-in;
+    text-decoration: none;
+    color: var(--white);
+}
