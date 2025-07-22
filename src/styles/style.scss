@@ -176,3 +176,9 @@
     right: 18%;
     rotate: 12deg;
 }
+@media  screen and (max-width: 768px) {
+    .detail__icon {
+        display: none;
+    }
+    
+}
