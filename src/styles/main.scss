@@ -3,6 +3,22 @@
     --secondary-color: #C92F4D;
     --white: #ffffff;
 }
+/* init sass variables for media queries */
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1200px;
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
 
 
 @import url(./hamburger.css);
@@ -19,7 +35,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    color: var(--white);
 }
 
 p {
@@ -71,4 +86,9 @@ a {
 
 .highlight {
     color: var(--secondary-color);
+}
+
+.img--responsive {
+    width: 100%;
+    height: auto;
 }
