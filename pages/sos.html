@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nás | Rentaro</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" href="../img/icon-s.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="hamburger-row">
+            <a href="../index.html">
+                <img src="../img/icon.svg" alt="Logo" class="header__logo img--responsive">
+            </a>
+            <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <nav class="hamburger-nav hamburger-zone">
+            <ul>
+                <li><a href="./o-nas.html">O nás</a></li>
+                <li><a href="#">SOS</a></li>
+                <li><a href="./cars.html">Naše vozidla</a></li>
+                 <li> <a href="#form" class="hamburger__link hamburger__link--btn">
+                        Rezervovat auto</a> </li>
+                <li> <a href="#faq" class="hamburger__link hamburger__link--btn hamburger__link--btn--reverse">
+                        Často kladené otázky</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+    <section class="hero hero--sos">
+        <div class="hero__content">
+            <h1 class="hero__title"> <span class="text--bold">Máte problém <span class="highlight">nebo
+                        otázku?</span></span>
+            </h1>
+            <p class="hero__text">Jsme tady pro vás – nonstop. Níže najdete řešení nejčastějších potíží a možnost, jak
+                nás ihned kontaktovat. Nezáleží, jestli jste právě na cestě, nebo si teprve vybíráte vozidlo – pomůžeme
+                vám.</p>
+            <a href="../index.html#faq" class="hero__button btn">Časté otázky </a>
+        </div>
+        <a href="#main" class="hero__scroll text--h2 text--bold">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                    fill="#fff" />
+            </svg>
+        </a>
+    </section>
+    <main class="main " id="main">
+        <div class="helpdesk">
+            <img src="../img/car-crash.webp" alt="Helpdesk" class="helpdesk__image img--responsive" loading="lazy">
+            <div class="helpdesk__content">
+                <h2 class="helpdesk__title text--h2 text--bold">Helpdesk – <span class="highlight">Jsme tu pro vás
+                        24/7</span></h2>
+                <p class="helpdesk__text">Pokud narazíte na problém s vozidlem nebo rezervací, neváhejte nás
+                    kontaktovat:</p>
+                <ul class="helpdesk__list">
+                    <li class="helpdesk__item text--bold"> <a href="tel:+420606847454"><span class="text--bold"> Telefon
+                                nonstop:</span> +420 606 847 454</a></li>
+                    <li class="helpdesk__item text--bold"> <a href="https://wa.me/420606847454"><span
+                                class="text--bold">WhatsApp:</span> +420 606 847 454</a></li>
+                    <li class="helpdesk__item text--bold"> <a href="mailto:helpdesk@rentaro.cz"><span
+                                class="text--bold">E-mail:</span> helpdesk@rentaro.cz</a></li>
+
+
+                </ul>
+                <p class="helpdesk__text--subtitle text--bold highlight">Důležitá telefonní čísla</p>
+                <ul class="helpdesk__list">
+                    <li class="helpdesk__item"> <a href="tel:158"><span class="text--bold">Policie:</span> 158</a></li>
+                    <li class="helpdesk__item"> <a href="tel:155"><span class="text--bold">Záchranná služba:</span>
+                            155</a></li>
+                    <li class="helpdesk__item"> <a href="tel:150"><span class="text--bold">Hasiči:</span> 150</a></li>
+                    <li class="helpdesk__item"> <a href="tel:112"><span class="text--bold">IZS:</span> 112</a></li>
+                </ul>
+                <a href="tel:+420606847454" class="btn helpdesk__button">Kontaktujte nás</a>
+            </div>
+        </div>
+        <img src="../img/icon-s.svg" alt="Icon" class="detail__icon--left detail__icon">
+        <img src="../img/icon-s.svg" alt="Icon" class="detail__icon--right detail__icon">
+        <section class="faq" id="faq">
+            <h2 class="text--h2 text--bold ">Nejčastější problémy <span class="highlight">a řešení</span></h2>
+            <div class="faq__item">
+                <button class="faq__question">
+                    <span>Auto nejde nastartovat</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#303030" />
+                    </svg>
+                </button>
+                <div class="faq__answer">
+                    <ul>
+                        <li>Ujistěte se, že je klíček v <b>zapalování</b> a otočený do polohy "ON".</li>
+                        <li>Pokud máte elektromobil, podívejte se na <b>stav baterie</b>.</li>
+                        <li>Pokud auto stále <b>nejde nastartovat</b>, kontaktujte náš <a class="text--bold"
+                                href="tel:+420606847454">helpdesk</a>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__question">
+                    <span> Chci prodloužit pronájem</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#303030" />
+                    </svg>
+                </button>
+                <div class="faq__answer">
+                    <p class="text--p">Kontaktujte nás <a class="text--bold" href="tel:+420606847454">telefonicky</a>
+                        nebo <a class="text--bold" href="mailto:info@rentaro.cz">e-mailem</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__question">
+                    <span>Technická závada během jízdy</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#303030" />
+                    </svg>
+                </button>
+                <div class="faq__answer">
+                    <ul>
+                        <li>Pokud je to možné, <b>zastavte na bezpečném místě</b>.</li>
+                        <li>Kontaktujte náš <a class="text--bold" href="tel:+420606847454">helpdesk</a> – domluvíme
+                           <b> servis </b> nebo <b> výměnu vozidla.</b></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__question">
+                    <span>Chci zrušit nebo změnit rezervaci</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#303030" />
+                    </svg>
+                </button>
+                <div class="faq__answer">
+                    <ul>
+                        <li>Rezervaci můžete zrušit nebo změnit <b>do 24 hodin </b> před začátkem pronájmu.</li>
+                        <li>Stačí kliknout na odkaz <b> v potvrzovacím emailu </b> nebo nás <b> kontaktovat.</b></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__question">
+                    <span>Ztratil jsem klíčky od auta</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#303030" />
+                    </svg>
+                </button>
+                <div class="faq__answer">
+                    <ul>
+                        <li>Kontaktujte náš <a class="text--bold" href="tel:+420606847454">helpdesk</a> co <b>nejdříve</b> –
+                            pomůžeme vám s náhradními klíčky.</li>
+                        <li>V případě ztráty klíčů může být<b> účtován poplatek</b> za jejich výrobu.</li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="helpdesk__text--subtitle text--bold" >Ani to Vám <span class="highlight">nepomohlo?</span></h2>
+
+            <p>Nezoufejte! Náš <a class="text--bold text--underline" href="tel:+420606847454">helpdesk</a> je tu pro vás.</p>
+
+        </section>
+
+
+
+
+
+    </main>
+    <script src="../scripts/hamburger.js"></script>
+</body>
+
+</html>

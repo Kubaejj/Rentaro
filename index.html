@@ -30,10 +30,12 @@
         <nav class="hamburger-nav hamburger-zone">
             <ul>
                 <li><a href="./pages/o-nas.html">O nás</a></li>
-                <li><a href="#item2">menu item 2</a></li>
-                <li><a href="#item3">menu item 3</a></li>
-                <li><a href="#item4">menu item 4</a></li>
-                <li><a href="#item5">menu item 5</a></li>
+                <li><a href="./pages/sos.html">SOS</a></li>
+                <li><a href="./pages/naše-vozidla.html">Naše vozidla</a></li>
+                <li> <a href="#form" class="hamburger__link hamburger__link--btn">
+                        Rezervovat auto</a> </li>
+                <li> <a href="#faq" class="hamburger__link hamburger__link--btn hamburger__link--btn--reverse">
+                        Často kladené otázky</a> </li>
             </ul>
         </nav>
 
@@ -139,16 +141,12 @@
             <h2 class="text--h2 text--bold text--center">Rezervujte si <span class="highlight">vozidlo!</span></h2>
             <form action="https://formsubmit.co/jakubjezbera8@gmail.com" method="POST" class="form__container">
                 <div class="form__group">
-                    <label for="firstName" class="form__label text--p text--bold">Jméno</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Karel" required
+                    <label for="Name" class="form__label text--p text--bold">Jméno a příjmení</label>
+                    <input type="text" id="Name" name="firstName" placeholder="Karel Novák" required
                         class="form__input text--p">
                 </div>
 
-                <div class="form__group">
-                    <label for="lastName" class="form__label text--p text--bold">Příjmení</label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Novák" required
-                        class="form__input text--p">
-                </div>
+
 
                 <div class="form__group">
                     <label for="email" class="form__label text--p text--bold">Email</label>
@@ -172,11 +170,20 @@
                     </select>
                 </div>
 
-                <div class="form__group">
+                <div class="form__group form__group--date">
                     <label for="pickupDate" class="form__label text--p text--bold">Datum vyzvednutí</label>
                     <input type="date" id="pickupDate" name="pickupDate" required class="form__input text--p">
                 </div>
 
+                <div class="form__group form__group--date">
+                    <label for="returnDate" class="form__label text--p text--bold">Datum vrácení</label>
+                    <input type="date" id="returnDate" name="returnDate" required class="form__input text--p">
+                </div>
+                <div class="form__group form__group--message">
+                    <label for="message" class="form__label text--p text--bold">Poznámka</label>
+                    <textarea id="message" name="message" placeholder="Přeji si..." rows="4" maxlength="500"
+                        class="form__input text--p"></textarea>
+                </div>
                 <div class="form__group">
                     <button type="submit" class="form__button btn">Rezervovat</button>
                 </div>
@@ -210,8 +217,8 @@
                             </svg> rentaro@gmail.com</a>
                     </div>
                     <div class="socials">
-                        <a href="www.instagram.com" class="socials__link"><svg width="28px" height="28px" viewBox="0 0 24 24"
-                                fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <a href="www.instagram.com" class="socials__link"><svg width="28px" height="28px"
+                                viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
                                     fill="#fff" />
@@ -232,7 +239,7 @@
                         <a href="www.facebook.com" class="socials__link"><svg fill="#fff" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 width="28px" height="28px" viewBox="0 0 512 512" xml:space="preserve">
-                                <g id="7935ec95c421cee6d86eb22ecd11b7e3">
+                                <g>
                                     <path style="display: inline;"
                                         d="M283.122,122.174c0,5.24,0,22.319,0,46.583h83.424l-9.045,74.367h-74.379
 		                            c0,114.688,0,268.375,0,268.375h-98.726c0,0,0-151.653,0-268.375h-51.443v-74.367h51.443c0-29.492,0-50.463,0-56.302
@@ -242,6 +249,7 @@
                                 </g>
                             </svg></a>
                     </div>
+                    <a class="contact__link text--p text--center btn" href="./pages/o-nas.html">Více o nás</a>
 
                 </div>
 
@@ -257,6 +265,9 @@
                         </svg>
                         Hostivice Praha, Česká republika
                     </a>
+                    <p class="text--p text--bold">Otevírací doba</p>
+                    <p class="text--p">Po - Pá: 8:00 - 18:00</p>
+                    <p class="text--p">So - Ne: 9:00 - 17:00</p>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d465.40906330418045!2d14.266987713909959!3d50.083488715200126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2scz!4v1753302504688!5m2!1sen!2scz"
                         loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -265,46 +276,101 @@
 
             </div>
         </div>
-        <div class="cars">
-            <h2 class="text--h2 text--bold text--center ">Naše <span class="highlight"> vozidla </span></h2>
-            <div class="cars__list">
-                <a href="#" class="cars__item">
-                    <div class="cars__img-wrapper">
-                        <img src="./img/hyundai-kona.avif" alt="Hyundai Kona" loading="lazy"
-                            class="cars__img img--responsive cars__img--default">
-                        <img src="./img/hyundai-kona-hover.avif" alt="Hyundai Kona" loading="lazy"
-                            class="cars__img img--responsive cars__img--hover">
-                    </div>
-                    <p class="text--h3 text--bold">Hyundai Kona Electric</p>
-                    <p class="text--p">Od 2 000 Kč / den</p>
-
-                </a> <a href="#" class="cars__item">
-                    <div class="cars__img-wrapper">
-                        <img src="./img/skoda-fabia.webp" alt="Škoda Fabia" loading="lazy"
-                            class="cars__img img--responsive cars__img--default">
-                        <img src="./img/skoda-fabia-hover.webp" alt="Škoda Fabia" loading="lazy"
-                            class="cars__img img--responsive cars__img--hover">
-                    </div>
-                    <p class="text--h3 text--bold">Škoda Fabia</p>
-                    <p class="text--p">Od 600 Kč / den</p>
-                </a>
-                <a href="#" class="cars__item">
-                    <div class="cars__img-wrapper">
-                        <img src="./img/hyundaii10.webp" alt="Hyundai i10" loading="lazy"
-                            class="cars__img img--responsive cars__img--default">
-                        <img src="./img/hyundaii10-hover.webp" alt="Hyundai i10" loading="lazy"
-                            class="cars__img img--responsive cars__img--hover">
-                    </div>
-                    <p class="text--h3 text--bold">Hyundai i10</p>
-                    <p class="text--p">Od 500 Kč / den</p>
-                </a>
-
-
-
-
-
+        <section class="faq" id="faq">
+            <h2 class="text--h2 text--bold text--center">Často kladené <span class="highlight">otázky</span></h2>
+            <div class="faq__item">
+                <button class="faq__question">
+                    <span>Jak mohu rezervovat vozidlo?</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#303030" />
+                    </svg>
+                </button>
+                <div class="faq__answer">
+                    Vozidlo si rezervujete online přes náš rezervační formulář. Zvolíte termín, vozidlo a vyplníte své
+                    údaje.
+                </div>
             </div>
-        </div>
+
+            <div class="faq__item">
+                <button class="faq__question">
+                    <span>Jaké doklady potřebuji k zapůjčení auta?</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#303030" />
+                    </svg>
+                </button>
+                <div class="faq__answer">
+                    Potřebujete platný občanský průkaz nebo pas a řidičský průkaz skupiny B. Cizinci navíc mezinárodní
+                    řidičský průkaz.
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__question">
+                    <span>Je nutné vracet auto s plnou nádrží?</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#303030" />
+                    </svg>
+                </button>
+                <div class="faq__answer">
+                    Ano. Pokud vrátíte vůz s nižším stavem paliva, doúčtujeme rozdíl dle aktuální ceny pohonných hmot
+                    včetně poplatku za dotankování.
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__question">
+                    <span>Je možné auto vrátit mimo pracovní dobu?</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#303030" />
+                    </svg>
+                </button>
+                <div class="faq__answer">
+                    Ano, nabízíme bezkontaktní vrácení vozidla i mimo naši provozní dobu. Detaily domluvíte při
+                    rezervaci.
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__question">
+                    <span>Mohu cestovat do zahraničí?</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#303030" />
+                    </svg>
+                </button>
+                <div class="faq__answer">
+                    Ano, ale je nutné tuto informaci uvést při rezervaci. Platí omezení na určité země v EU a pojištění
+                    je třeba upravit podle cílové destinace.
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__question">
+                    <span>Může řídit i jiná osoba než ten, kdo auto rezervoval?</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                            fill="#303030" />
+                    </svg>
+                </button>
+                <div class="faq__answer">
+                    Ano, ale druhý řidič musí být uvedený v rezervaci a doložit řidičský průkaz. Případné přidání
+                    dalšího řidiče může být zpoplatněno dle ceníku.
+                </div>
+            </div>
+
+
+        </section>
+
 
 
 
