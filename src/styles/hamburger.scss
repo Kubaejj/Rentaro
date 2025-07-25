@@ -77,6 +77,11 @@
         transition: translate 0.5s, rotate 0.5s 0.25s;
     }
 
+    .hamburger-nav li {
+        width: 100%;
+        text-align: center;
+    }
+
 
 }
 
@@ -116,6 +121,7 @@
     font-weight: 500;
     transition: color 0.3s ease, scale 0.3s ease;
 }
+
 .hamburger-nav li a:hover {
     color: var(--primary-color);
     scale: 1.05;
@@ -135,6 +141,7 @@
     font-weight: bold;
     transition: all 0.4s ease;
 }
+
 .hamburger-nav li a.hamburger__link--btn--reverse {
     background-color: var(--primary-color);
     color: var(--white);
@@ -145,6 +152,7 @@
     background-color: var(--primary-color);
     color: var(--white);
 }
+
 .hamburger-nav li a.hamburger__link--btn--reverse:hover {
     background-color: var(--white);
     color: var(--primary-color);

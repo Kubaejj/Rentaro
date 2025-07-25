@@ -2,13 +2,13 @@ $breakpoint-mobile: 768px;
 $breakpoint-tablet: 1200px;
 
 .header__logo {
-    width: 120px;
+    width: 140px;
     height: auto;
 }
 
 .hero {
     width: 100%;
-    height:100vh;
+    height: 100vh;
     background-image: url('../img/hero.webp');
     background-size: cover;
     background-position: center;
@@ -18,17 +18,25 @@ $breakpoint-tablet: 1200px;
 
 
 }
-.hero__text{
+
+.cars__item {
+    color: #000;
+}
+
+.hero__text {
     max-width: 600px;
 }
+
 .hero--o-nas {
     background-image: url('../img/o-nas.webp');
     background-position: left;
 }
+
 .hero--sos {
     background-image: url('../img/sos.webp');
     background-position: center;
 }
+
 .hero--sos .hero__content {
     align-items: center;
     justify-content: flex-start;
@@ -167,7 +175,7 @@ $breakpoint-tablet: 1200px;
 }
 
 
-.form__group--message{
+.form__group--message {
     grid-row: span 2;
     grid-column: span 2;
 
@@ -220,18 +228,20 @@ $breakpoint-tablet: 1200px;
     .detail__icon {
         display: none;
     }
-    .form__group--message{
-    grid-row: span 1;
-    grid-column: span 1;
 
-}
+    .form__group--message {
+        grid-row: span 1;
+        grid-column: span 1;
+
+    }
 
 
 }
 
 .about-us,
 .our-difference,
-.our-road--wrapper, .helpdesk {
+.our-road--wrapper,
+.helpdesk {
     padding: 6rem;
     display: grid;
 
@@ -241,7 +251,8 @@ $breakpoint-tablet: 1200px;
 }
 
 .about-us,
-.our-difference, .helpdesk {
+.our-difference,
+.helpdesk {
     grid-template-columns: minmax(250px, 450px) 1fr;
 }
 
@@ -330,7 +341,8 @@ $breakpoint-tablet: 1200px;
     color: var(--white);
 }
 
-.o-nas .btn , .helpdesk .btn {
+.o-nas .btn,
+.helpdesk .btn {
     align-self: flex-start;
 }
 
@@ -362,12 +374,15 @@ $breakpoint-tablet: 1200px;
 
 
 }
+
 @media screen and (max-width: $breakpoint-tablet) {
     .contact__container {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    .contact__container  .contact__location,   .contact__container .contact__info {
+
+    .contact__container .contact__location,
+    .contact__container .contact__info {
         padding: 2rem 0;
     }
 }
@@ -379,7 +394,9 @@ $breakpoint-tablet: 1200px;
     align-items: center;
     gap: 1rem;
 }
-.contact__location, .contact__info {
+
+.contact__location,
+.contact__info {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -391,6 +408,7 @@ iframe {
     height: 150px;
     border-radius: 10px;
 }
+
 .socials {
     display: flex;
     gap: 1rem;
@@ -402,81 +420,162 @@ iframe {
 
 
 .faq {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 4rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .faq__item {
-  border-bottom: 1px solid #ccc;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
-  max-height: 4rem;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    max-height: 4rem;
 }
 
 .faq__item.active {
-  max-height: 500px;
+    max-height: 500px;
 }
 
 .faq__question {
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 1.5rem 0;
-  text-align: left;
-  font-size: 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.5rem 0;
+    text-align: left;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
 .faq__icon {
-  transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .faq__item.active .faq__icon {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .faq__answer {
-  padding: 0 0 0 0;
-  color: #555;
-  font-size: 1rem;
-  opacity: 0;
-  transition: opacity 0.4s ease, padding 0.4s ease;
+    padding: 0 0 0 0;
+    color: #555;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.4s ease, padding 0.4s ease;
 }
 
 .faq__item.active .faq__answer {
-  padding: 0.5rem 0 1rem 0;
-  opacity: 1;
+    padding: 0.5rem 0 1rem 0;
+    opacity: 1;
 }
 
 @media screen and (max-width: 640px) {
-  .faq {
-    padding: 3rem 1rem;
-    gap: 1rem;
-  }
+    .faq {
+        padding: 3rem 1rem;
+        gap: 1rem;
+    }
 
-  .faq__question {
-    font-size: 1rem;
-    padding: 1rem 0;
-  }
+    .faq__question {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
 
-  .faq__answer {
-    font-size: 0.95rem;
-  }
+    .faq__answer {
+        font-size: 0.95rem;
+    }
 }
 
 
-.helpdesk__item a{
+.helpdesk__item a {
     color: #000;
     font-weight: normal;
 }
 
-.helpdesk__list{
+.helpdesk__list {
     margin-bottom: 2rem;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+
+}
+
+.footer--wrapper {
+    padding: 4rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+   
+.footer__logo{
+    margin-right: 4rem;
+}
+}
+
+.footer__logo {
+    max-width: 250px;
+    width: 100%;
+}
+
+.footer__logo a {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.footer__container .text--h2 {
+    color: var(--white);
+}
+
+.footer .contact__info {
+    padding: 2rem 0;
+}
+
+.footer .contact__container {
+    justify-content: left;
+}
+
+.footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+}
+.footer__item a{
+    color: var(--white);
+    display: block;
+    padding:  1rem;
+    padding-left: 0;
+    transition: transform 0.3s ease;
+}
+.footer__item a:hover {
+   transform: scale(1.05);
+}
+.footer__copyright{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0 ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    background-color: #323232;
+}
+.footer__link{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
 }
