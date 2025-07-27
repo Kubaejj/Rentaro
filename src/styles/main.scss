@@ -44,7 +44,8 @@ body {
 #form,
 #sos,
 #cars,
-#o-nas {
+#o-nas,
+#specifikace {
     scroll-margin-top: 4.5rem;
 }
 
@@ -72,8 +73,11 @@ h6 {
 
 .text--h2 {
     color: #000;
-}
 
+}
+.text--big{
+    font-size: 1.5rem;
+}
 .text--h3 {
     font-size: 1.25rem;
     color: #000;
@@ -91,6 +95,13 @@ h6 {
     text-align: center;
 }
 
+
+@media screen and (max-width: $breakpoint-mobile) {
+   .text--center--off{
+    text-align: left;
+}
+    
+}
 
 a {
     text-decoration: none;

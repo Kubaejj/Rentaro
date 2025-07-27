@@ -162,11 +162,25 @@
 
                 <div class="form__group">
                     <label for="car" class="form__label text--p text--bold">Vyberte vozidlo</label>
-                    <select id="car" name="car" class="form__input" required>
+                   <select id="car" name="car" class="form__input" required>
                         <option value="" disabled selected>Vyberte vozidlo</option>
-                        <option value="Hyundai Kona Electric">Hyundai Kona Electric</option>
-                        <option value="Hyundai i10">Hyundai i10</option>
-                        <option value="Škoda Fabia">Škoda Fabia</option>
+
+                        <optgroup label="Městská a malá auta">
+                            <option value="Škoda Fabia">Škoda Fabia</option>
+                            <option value="Hyundai i10">Hyundai i10</option>
+                            <option value="Volkswagen Polo">Volkswagen Polo</option>
+                        </optgroup>
+
+                        <optgroup label="SUV a crossovery">
+                            <option value="Hyundai Kona Electric">Hyundai Kona Electric</option>
+                            <option value="Škoda Karoq">Škoda Karoq</option>
+                            <option value="Dacia Duster">Dacia Duster</option>
+                        </optgroup>
+
+                        <optgroup label="Prémiové a luxusní vozy">
+                            <option value="Audi A8">Audi A8</option>
+                            <option value="Porsche 911">Porsche 911</option>
+                        </optgroup>
                     </select>
                 </div>
 

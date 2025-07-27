@@ -52,6 +52,9 @@ $breakpoint-tablet: 1200px;
     justify-content: flex-start;
     padding-top: 10rem;
 }
+.main--car{
+    padding-top:80px ;
+}
 
 .hero__content {
     display: flex;
@@ -127,6 +130,10 @@ $breakpoint-tablet: 1200px;
     margin: 0 auto;
 }
 
+.cars__list h3{
+    grid-column: 1 / -1;    
+}
+
 .cars__item {
     display: grid;
     grid-template-rows: auto auto;
@@ -160,9 +167,11 @@ $breakpoint-tablet: 1200px;
 .cars__img--hover {
     opacity: 0;
 }
+
 .cars__catalog .cars__item:hover .cars__img--default {
     opacity: 1;
 }
+
 .cars__item:hover .cars__img--hover {
     opacity: 1;
 }
@@ -341,6 +350,11 @@ $breakpoint-tablet: 1200px;
 .why-choose-us__list,
 .helpdesk__list {
     margin: 0;
+}
+
+
+.about-us__link:first-child{
+    margin-right: 1.5rem;
 }
 
 .our-road {
@@ -596,7 +610,7 @@ iframe {
     font-weight: 500;
 }
 
-.top-cars  {
+.top-cars {
     padding: 4rem;
     text-align: center;
 }
@@ -627,8 +641,59 @@ iframe {
     transform: scale(1.05);
 
 }
-.cars-catalog__img{
+
+.cars-catalog__img {
     max-height: 200px;
     object-fit: cover;
 
+}
+
+.cars__catalog h3 {
+    padding: 3rem 0 0 3rem ;
+}
+.cars__catalog .cars__img{
+    align-self: center;
+}
+
+
+
+.cars__specification{
+    padding: 4rem;
+}
+@media screen and (max-width: $breakpoint-mobile) {
+    .cars__specification {
+        padding: 4rem 2rem;
+    }
+    
+}
+
+.cars__specification--table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+tr {
+    border-bottom: 1px solid #ddd;
+}
+th,td {
+    padding: 1rem;
+}
+th{
+    font-weight: 600;
+}
+.cars__specification--title {
+    font-weight: bold;
+    font-size: 1.20rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding-top: 2.5rem;
+}
+@media screen and (max-width: $breakpoint-mobile) {
+ .cars__catalog--car {
+    padding: 4rem 2rem;
+ }
+    
 }

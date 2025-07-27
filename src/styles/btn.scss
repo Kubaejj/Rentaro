@@ -49,3 +49,41 @@
     text-decoration: none;
     color: var(--white);
 }
+
+
+
+
+
+
+
+
+
+.btn--clean {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    margin: 0 auto;
+
+
+    border-radius: 1rem;
+    border: 1px solid var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    color: #000;
+}
+
+.btn--clean--reverse {
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-top: 1rem;
+}
+
+.btn--clean:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn--clean--reverse:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
